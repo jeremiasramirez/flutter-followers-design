@@ -6,6 +6,8 @@ class HomePage extends StatefulWidget {
 
 class HomePageState extends State<HomePage> {
   Widget build(context) {
-    return Text("home");
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(appBar: AppBar(title: Text("Home app"))));
   }
 }
