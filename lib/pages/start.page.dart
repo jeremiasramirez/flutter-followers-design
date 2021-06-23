@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_follower_card/services/service.data.dart';
 import 'package:flutter_follower_card/widgets/start-loading.widget.dart';
 
 class StartPage extends StatefulWidget {
