@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_follower_card/widgets/followers.widget.dart';
 
@@ -24,7 +25,11 @@ class HomePageState extends State<HomePage> {
             ),
           ),
           body: TabBarView(
-            children: [Followers(), Text("Dato 2"), Text("Dato 3")],
+            children: [
+              BounceInDown(child: Followers()),
+              BounceInDown(child: Followers()),
+              BounceInDown(child: Followers()),
+            ],
           ),
         ),
       ),

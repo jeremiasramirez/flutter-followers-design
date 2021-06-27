@@ -11,6 +11,11 @@ class FollowersState extends State<Followers> {
     return ListView(physics: BouncingScrollPhysics(), children: [
       AdjustStateless(0, 15),
       this.follower("First", 1),
+      this.follower("First", 1),
+      this.follower("First", 1),
+      this.follower("First", 1),
+      this.follower("First", 1),
+      this.follower("First", 1),
     ]);
   }
 
