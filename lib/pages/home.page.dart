@@ -15,7 +15,7 @@ class HomePageState extends State<HomePage> {
           appBar: AppBar(
             centerTitle: true,
             title: Text("Social media"),
-            backgroundColor: Colors.deepPurple,
+            backgroundColor: Color.fromRGBO(100, 0, 170, 1),
             leading: FlatButton(
                 onPressed: () {},
                 child: Icon(Icons.arrow_back, color: Colors.white)),
@@ -35,7 +35,7 @@ class HomePageState extends State<HomePage> {
     return [
       Text(
         "Followers",
-        style: TextStyle(fontSize: 23, color: Colors.white),
+        style: TextStyle(fontSize: 25, color: Colors.white),
       ),
       Text(
         "Category",
