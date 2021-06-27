@@ -20,20 +20,7 @@ class HomePageState extends State<HomePage> {
                 onPressed: () {},
                 child: Icon(Icons.arrow_back, color: Colors.white)),
             bottom: TabBar(
-              tabs: [
-                Text(
-                  "Followers",
-                  style: TextStyle(fontSize: 23, color: Colors.white),
-                ),
-                Text(
-                  "Category",
-                  style: TextStyle(fontSize: 20, color: Colors.grey[200]),
-                ),
-                Text(
-                  "Settings",
-                  style: TextStyle(fontSize: 20, color: Colors.grey[200]),
-                )
-              ],
+              tabs: this.tabs(),
             ),
           ),
           body: TabBarView(
@@ -42,5 +29,22 @@ class HomePageState extends State<HomePage> {
         ),
       ),
     );
+  }
+
+  List<Text> tabs() {
+    return [
+      Text(
+        "Followers",
+        style: TextStyle(fontSize: 23, color: Colors.white),
+      ),
+      Text(
+        "Category",
+        style: TextStyle(fontSize: 20, color: Colors.grey[200]),
+      ),
+      Text(
+        "Settings",
+        style: TextStyle(fontSize: 20, color: Colors.grey[200]),
+      )
+    ];
   }
 }

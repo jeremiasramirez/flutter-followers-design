@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'adjust.widget.dart';
+
 class Followers extends StatefulWidget {
   FollowersState createState() => new FollowersState();
 }
@@ -7,6 +9,7 @@ class Followers extends StatefulWidget {
 class FollowersState extends State<Followers> {
   Widget build(context) {
     return ListView(physics: BouncingScrollPhysics(), children: [
+      AdjustStateless(0, 10),
       this.follower("First", 1),
       this.follower("First", 1),
       this.follower("First", 1),
