@@ -26,9 +26,12 @@ class HomePageState extends State<HomePage> {
           ),
           body: TabBarView(
             children: [
-              BounceInDown(child: Followers()),
-              BounceInDown(child: Followers()),
-              BounceInDown(child: Followers()),
+              BounceInUp(
+                  duration: Duration(milliseconds: 400), child: Followers()),
+              BounceInUp(
+                  duration: Duration(milliseconds: 400), child: Followers()),
+              BounceInUp(
+                  duration: Duration(milliseconds: 400), child: Followers()),
             ],
           ),
         ),
