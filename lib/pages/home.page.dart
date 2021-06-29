@@ -1,5 +1,7 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_follower_card/widgets/adjust.widget.dart';
+import 'package:flutter_follower_card/widgets/category.widget.dart';
 import 'package:flutter_follower_card/widgets/followers.widget.dart';
 
 class HomePage extends StatefulWidget {
@@ -15,7 +17,7 @@ class HomePageState extends State<HomePage> {
         child: Scaffold(
           appBar: AppBar(
             centerTitle: true,
-            title: Text("Social media"),
+            title: Text("Social"),
             backgroundColor: Color.fromRGBO(100, 0, 170, 1),
             leading: FlatButton(
                 onPressed: () {},
@@ -26,12 +28,13 @@ class HomePageState extends State<HomePage> {
           ),
           body: TabBarView(
             children: [
-              BounceInUp(
-                  duration: Duration(milliseconds: 400), child: Followers()),
-              BounceInUp(
-                  duration: Duration(milliseconds: 400), child: Followers()),
-              BounceInUp(
-                  duration: Duration(milliseconds: 400), child: Followers()),
+              FadeInDown(
+                  from: 100,
+                  duration: Duration(milliseconds: 200),
+                  child: Followers()),
+              ListCategories(),
+              FadeInDown(
+                  duration: Duration(milliseconds: 200), child: Followers()),
             ],
           ),
         ),
